@@ -1,0 +1,32 @@
+
+.Home__btn {
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.Home__edit {
+    background-color: #008cba;
+}
+
+.Home__delete {
+    background-color: #f44336;
+}
+
+.Home__view {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+.Home__contact {
+    background-color: #e82764;
+    margin-bottom: 10px;
+}
+

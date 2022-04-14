@@ -1,0 +1,23 @@
+.ViewItem__container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border: 1px red solid;
+    align-content: start;
+    margin: 0 auto;
+}
+
+.ViewItem__header {
+    height: 30%;
+    background: #5d6770;
+    color: white;
+    text-align: center;
+}
+
+.ViewItem__header p {
+    font-size: 20px;
+}
+
+.ViewItem__body {
+    padding: 4px 16px;
+}
