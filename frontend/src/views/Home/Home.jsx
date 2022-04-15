@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {toast} from 'react-toastify';
-import {ButtonAction} from '../../Buttons/ButtonAction/ButtonAction';
-import {ButtonAdd} from '../../Buttons/ButtonAdd/ButtonAdd';
-import {errorMsg} from '../../../utils/utils';
+import {ButtonAction} from '../../components/Buttons/ButtonAction/ButtonAction';
+import {ButtonAdd} from '../../components/Buttons/ButtonAdd/ButtonAdd';
+import {errorMsg} from '../../utils/utils';
 
 
 import './Home.css';

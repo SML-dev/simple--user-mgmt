@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import { useNavigate, useParams} from 'react-router-dom';
+import {useNavigate, useParams} from 'react-router-dom';
 import {toast} from 'react-toastify';
-import {BtnBackToHome} from '../../Buttons/ButtonBack/ButtonBack';
-import {errorMsg} from '../../../utils/utils';
+import {BtnBackToHome} from '../../components/Buttons/ButtonBack/ButtonBack';
+import {errorMsg} from '../../utils/utils';
 
 import './AddEdit.css';
 
@@ -27,11 +27,11 @@ export const AddEdit = () => {
     };
 
     useEffect(() => {
-        ( async () => await findUserToEdit(id) )();
+        (async () => await findUserToEdit(id))();
     }, [id]);
 
     const handleSubmit = () => {
-        return ( async () => {
+        return (async () => {
             if (!name || !email || !contact) return toast.error('Please fill required fields.');
             if (name.length > 60 || email.length > 50 || contact.length > 60) return toast.error('Fields must be less than 60 characters.');
             if (name.length < 5 || email.length < 5 || contact.length < 5) return toast.error('Fields must be at least 5 characters.');
@@ -54,11 +54,11 @@ export const AddEdit = () => {
                 navigate('/');
 
             } catch (err) {
-                errorMsg(err)
+                errorMsg(err);
             }
-        } )();
+        })();
     };
-    return ( <div style={{marginTop: '100px'}}>
+    return (<div style={{marginTop: '100px'}}>
             <div style={{
                 margin: 'auto', padding: '15px', maxWidth: '400px', alignContent: 'center'
             }}

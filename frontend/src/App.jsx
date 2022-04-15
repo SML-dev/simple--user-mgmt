@@ -1,12 +1,13 @@
 import React from 'react';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import {ToastContainer} from 'react-toastify';
-import {Home} from '../Pages/Home/Home';
+import {Home} from './views/Home/Home';
 import 'react-toastify/dist/ReactToastify.css';
-import {AddEdit} from '../Pages/AddEdid/AddEdit';
-import {ViewItem} from '../Pages/ViewItem/ViewItem';
+import {AddEdit} from './views/AddEdid/AddEdit';
+import {ViewItem} from './views/ViewItem/ViewItem';
 
 import './App.css';
+import {NotFoundPage} from './views/NotFoundPage/NotFoundPage';
 
 export const App = () => {
     return (
@@ -18,6 +19,7 @@ export const App = () => {
                     <Route path="/add" element={<AddEdit/>}/>
                     <Route path="/edit/:id" element={<AddEdit/>}/>
                     <Route path="/view/:id" element={<ViewItem/>}/>
+                    <Route path="*" element={<NotFoundPage/>}/>
                 </Routes>
             </div>
         </BrowserRouter>
